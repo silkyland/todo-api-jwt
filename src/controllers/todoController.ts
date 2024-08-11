@@ -24,6 +24,18 @@ export const getTodos = async (req: Request, res: Response) => {
 };
 
 
+export const getTodo = async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const todo = await Todo.findById(id);
+    if (!todo) return res.status(404).json({ message: 'Todo not found' });
+    res.json(todo);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching todo', error });
+  }
+};
+
+
 export const updateTodo = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
