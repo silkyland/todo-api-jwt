@@ -18,10 +18,11 @@ app.use(express.json());
 // Authentication routes
 app.use('/api/auth', authRoutes);
 
+
+app.use('/api/users', userRoutes);
+
 // Todo routes (protected)
 app.use('/api/todos', authMiddleware, todoRoutes);
-
-app.get('/api/users', userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
