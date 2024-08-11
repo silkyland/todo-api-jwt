@@ -1,10 +1,13 @@
+import cors from 'cors';
 import express from 'express';
 import { connectDB } from './config/database';
 import { authMiddleware } from './middlewares/authMiddleware';
 import authRoutes from './routes/authRoutes';
 import todoRoutes from './routes/todoRoutes';
 
+
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 connectDB();
