@@ -1,18 +1,4 @@
-Here's a `README.md` file that provides instructions for setting up, running, and using your Todo API, including the `create`, `read`, `update`, and `delete` (CRUD) operations for todos.
 
-### 1. **Create the `README.md` File**
-
-Create the `README.md` file in the root directory of your project:
-
-```bash
-touch README.md
-```
-
-### 2. **Add Content to `README.md`**
-
-Open the `README.md` file and add the following content:
-
-```markdown
 # Todo API
 
 A simple Todo API built with Node.js, Express, TypeScript, MongoDB, and Docker. This API allows users to manage their todos with authentication via JWT.
@@ -201,12 +187,3 @@ This will build the Docker containers and start the application. The API will be
 ## License
 
 This project is licensed under the MIT License.
-```
-
-### 3. **Save the `README.md` File**
-
-After adding the content, save the `README.md` file.
-
-This `README.md` provides a comprehensive guide on setting up, running, and using your Todo API, including how to perform CRUD operations on todos.
-
-Let me know if you need any more details or further adjustments!
