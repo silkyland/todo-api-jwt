@@ -118,3 +118,5 @@ coverage/
 # Ignore specific configurations
 config.js
 config.ts
+
+mongo-data
